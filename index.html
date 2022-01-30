@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона - не большой городок в Аризоне</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <!-- Шапка -->
@@ -34,7 +35,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда</a>
+            <a class="navigation-link-button" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
@@ -44,6 +45,7 @@
       <section class="description">
         <h2 class="visually-hidden">Достопримечательность города</h2>
         <img class="canyon-image" src="images/index-background.jpg" width="1200" height="485" alt="Изображение Каньона">
+        <!-- Преимущества -->
         <ul class="tagline">
           <li class="tagline-title">
             <h3 class="tagline-text">Седона — небольшой городок в Аризоне,
@@ -52,13 +54,12 @@
           </li>
         </ul>
       </section>
-      <!-- Преимущества -->
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-block-1">
           <li class="advantages-description">
            <h3 class="advantages-title-one">Настоящий городок</h3>
-           <p class="advantages-tagline">— №1 —</p>
-           <p class="advantages-tagline-description">Седона — не аттракцион для туристов, там течёт 
+           <p class="advantages-tagline-number">— №1 —</p>
+           <p class="advantages-tagline-one">Седона — не аттракцион для туристов, там течёт 
             своя жизнь</p>
          </li>
         </ul>
@@ -66,25 +67,25 @@
         <ul class="advantages-block-2">
           <li class="advantages-description">
             <h3 class="advantages-title">Жильё</h3>
-            <p class="advantages-tagline">Рекомендуем пожить 
+            <p class="advantages-tagline-description">Рекомендуем пожить 
               в настоящем мотеле, всё как в кино! </p>
           </li>
           <li class="advantages-description">
             <h3 class="advantages-title">Еда</h3>
-            <p class="advantages-tagline">Всегда заказывайте
+            <p class="advantages-tagline-description">Всегда заказывайте
               топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="advantages-description">
             <h3 class="advantages-title">Сувениры</h3>
-            <p class="advantages-tagline">Не только китайского, но и настоящего местного производства!</p>
+            <p class="advantages-tagline-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
         <img class="image-sity-canyon" src="images/advantages-photo-2.jpg" width="800" height="384" alt="Фото каньона">
         <ul class="advantages-block-3">
           <li class="advantages-description">
             <h3 class="advantages-title-one">Там есть мост дьявола</h3>
-            <p class="advantages-tagline">— №2 —</p>
-            <p class="advantages-tagline-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <p class="advantages-tagline-number">— №2 —</p>
+            <p class="advantages-tagline-one">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
         </ul>
         <ul class="advantages-block-4">
@@ -105,19 +106,20 @@
           </li>
         </ul>
       <section class="offer-hotel">
-        <h3 class="tagline-text">Заинтересовались?</h3>
+        <h3 class="offer-text">Заинтересовались?</h3>
         <p class="offer-description">Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="button-search" href="catalog-page.html">Поиск гостиницы в Седоне</a>
       </section>
+      <!-- Подпишитесь на рассылку -->
       <section class="subscribe">
-        <img class="background-subscribe" src="images/background-subscribe.jpg" width="1200" height="411" alt="Фоновое изображение">
         <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="offer-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="offer-email">email</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="offer-email" id="offer-email"  required>
-          <button class="subscribe-button" type="submit"> <span class="subscribe-text">Подписаться</span>
+          <button class="subscribe-button" type="submit"> 
+            <span class="subscribe-text">Подписаться</span>
           </button>
         </form>
       </section>
@@ -143,7 +145,7 @@
       </ul>
     </section>
     <a class="footer-contacts-phone" href="tel:8128121212">(812) 812-12-12</a>
-    <img class="logo-academy" src="images/logo_htmlacademy.svg" width="115" height="34" alt="HTML Академия">
+    <img class="logo-academy" src="images/logo-htmlacademy.svg" width="115" height="34" alt="HTML Академия">
    </footer>
   </body>
 </html>
