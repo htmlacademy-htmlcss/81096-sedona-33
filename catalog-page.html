@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Седона - не большой городок в Аризоне</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <!-- Шапка -->
     <header class="page-header">
       <nav class="navigation">
         <!-- Лого -->
-        <img class="logo" src="images/logo.svg" width="139" height="70" alt="Город Седона">
+        <a class="logo" href="index.html">
+          <img src="images/logo.svg" width="139" height="70" alt="Город Седона">
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -30,11 +33,11 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Нравиться</span>
+              <span class="number-likes">12</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Хочу сюда</span>
+            <a class="navigation-link-button" href="#">Хочу сюда</a>
             </a>
           </li>
         </ul>
@@ -44,13 +47,12 @@
       <!-- Поиск гостиниц -->
       <header class="inner-header">
         <h1 class="inner-hesder-title">Гостиницы Седоны</h1>
-        <img class="background-search" src="images/background-catalog.jpg" width="1200" height="408" alt="Фоновое изображение">
-        <ul class="bresdcrumbs">
-          <li class="bresdcrumbs-item">
-            <a class="bresdcrumbs-link" href="index.html"> Главная</a>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html"> Главная</a>
           </li>
-          <li class="bresdcrumbs-item">
-            <a class="bresdcrumbs-link">Гостиницы</a>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
       </header>
@@ -97,24 +99,24 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Применить</button>
+          <button class="button-apply" type="submit">Применить</button>
           <button class="button-reset" type="submit">Сбросить</button>
         </form>
         <!-- Результаты поиска -->
-        <h2 class="Hotels-found">Найдено гостиниц: 38</h2>
+        <h2 class="hotels-found">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="expensive">Сначала дорогие</option>
-            <option value="popular">Сначала популярные</option>
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
         </select>
-        <a class="button" href="#">
-            <span class="visually-hidden">Показать карточки</span>
+        <a class="button-cards" href="#">
+          <span class="visually-hidden">Показать карточки</span>
         </a>
         <a class="button-slide" href="#">
-            <span class="visually-hidden">Показать слайдер</span>
+          <span class="visually-hidden">Показать слайдер</span>
         </a>
-        <a href="#" class="button-button-light">
-            <span class="visually-hidden">Показать список</span>
+        <a href="#" class="button-list">
+          <span class="visually-hidden">Показать список</span>
         </a>
         <ul class="hotel-list">
           <li class="hotel-card">
@@ -124,8 +126,8 @@
             </a>
             <span class="housing-type">Гостиница</span>
             <span class="housing-price">От 4000 ₽</span>
-            <a class="hotel-card-button button" href="#">Подробнее</a>
-            <a class="hotel-card-button-favorites button" href="#">В Избранное</a>
+            <a class="hotel-card-button" href="#">Подробнее</a>
+            <a class="hotel-card-button-favorites" href="#">В Избранное</a>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
@@ -134,8 +136,8 @@
             </a>
             <span class="housing-type">Гостиница</span>
             <span class="housing-price">От 3000 ₽</span>
-            <a class="hotel-card-button button" href="#">Подробнее</a>
-            <a class="hotel-card-button-favorites button" href="#">В Избранное</a>
+            <a class="hotel-card-button" href="#">Подробнее</a>
+            <a class="hotel-card-button-favorites" href="#">В Избранное</a>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
@@ -144,8 +146,8 @@
             </a>
             <span class="housing-type">Гостиница</span>
             <span class="housing-price">От 2000 ₽</span>
-            <a class="hotel-card-button button" href="#">Подробнее</a>
-            <a class="hotel-card-button-favorites button" href="#">В Избранное</a>
+            <a class="hotel-card-button" href="#">Подробнее</a>
+            <a class="hotel-card-button-in-favorites" href="#">В Избранном</a>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
@@ -154,11 +156,11 @@
             </a>
             <span class="housing-type">Гостиница</span>
             <span class="housing-price">От 3000 ₽</span>
-            <a class="hotel-card-button button" href="#">Подробнее</a>
-            <a class="hotel-card-button-favorites button" href="#">В Избранное</a>
+            <a class="hotel-card-button" href="#">Подробнее</a>
+            <a class="hotel-card-button-favorites" href="#">В Избранное</a>
           </li>
         </ul> 
-        <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+        <button class="pagination-button pagination-show-more" type="button">Загрузить ещё</button>
         <ul class="pagnation">
           <li class="pagnation-item">
             <a class="pagination-link pagination-current">
@@ -184,13 +186,14 @@
           <option value="eight">8</option>
         </select>
       </section>
-      <section class="subscribe">
-        <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
-        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <!-- Подпишитесь на рассылку -->
+      <section class="subscribe-catalog">
+        <h3 class="subscribe-title-catalog">Подпишитесь на рассылку</h3>
+        <p class="subscribe-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="offer-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="offer-email">email</label>
           <input class="field" placeholder="Ваш email" type="email" name="offer-email" id="offer-email"  required>
-          <button class="subscribe-button" type="submit"> 
+          <button class="subscribe-button-catalog" type="submit"> 
             <span class="subscribe-text">Подписаться</span>
           </button>
         </form>
@@ -216,8 +219,10 @@
           </li>
         </ul>
       </section>
-      <a class="footer-contacts-phone" href="tel:8128121212">(812) 812-12-12</a>
-      <img class="logo-academy" src="images/logo_htmlacademy.svg" width="115" height="34" alt="HTML Академия">
+      <a class="footer-contacts-phone" href="tel:8128121212" alt="Телефон">(812) 812-12-12</a>
+      <a class="logo-academy" href="https://htmlacademy.ru/">
+      <img src="images/logo-htmlacademy.svg" width="115" height="34" alt="HTML Академия">
+      </a>
     </footer>
   </body>
 </html>
