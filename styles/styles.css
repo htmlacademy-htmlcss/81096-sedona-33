@@ -29,7 +29,6 @@ html {
   height: 100%;
 }
 body {
-  margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -38,6 +37,11 @@ body {
   line-height: 24px;
   color: #000000;
   background-color: #ffffff;
+  width: 1200px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
 }
 .button-search {
   font-family: inherit;
@@ -45,18 +49,27 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 10px;
   color: #ffffff;
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
 }
+.subscribe-title {
+  padding: 94px 240px 29px;
+  margin: 0;
+}
+.subscribe-description {
+  margin-bottom: 46px;
+  margin-top: 0;
+}
 .subscribe-button {
+  width: 200px;
+  height: 60px;
   font-family: inherit;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  text-align: center;
   border-radius: 10px;
   color: #ffffff;
   background-color: #83B3D3;
@@ -86,16 +99,17 @@ body {
 .navigation {
   display: flex;
   width: 1060px;
+  height: 70px;
   margin: 0 auto;
 }
 .navigation-list {
-  width: 445px;
-  margin-top: 0;
+  display: flex;
+  width: 345px;
   margin-right: 279px;
-  margin-bottom: 0;
   padding: 0;
 }
 .navigation-user {
+  display: flex;
   max-width: 264px;
   margin: 0;
   padding: 0;
@@ -114,16 +128,20 @@ body {
 .main-container {
   flex-grow: 1;
 }
-.main-index {
-  background-image: url("../images/welcome.svg");
-  background-size: auto;
+.description {
+  background-image: url("../images/index-background.jpg");
+  background-size: auto auto;
   background-repeat: no-repeat;
+}
+.canyon-image {
+  margin: 51px 371px 82px;
 }
 .page-container{
   width: 1200px;
   margin: 0 auto;
 }
 .tagline {
+  height: 282px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -146,6 +164,8 @@ body {
 }
 .advantages-block {
   width: 400px;
+  height: 384px;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
@@ -154,14 +174,23 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 97px;
+  padding-bottom: 30px;
+  margin: 0;
 }
 .advantages-block .advantages-text {
+  width: 210px;
+  height: 63px;
   font-size: 18px;
   line-height: 21px;
+  padding-left: 90px;
   font-weight: 400;
+  margin: 0;
 }
 /* синие блоки */
 .advantages-description-blue {
+  width: 400px;
+  height: 384px;
   background: #83B3D3;
 }
 .advantages-block-1 .advantages-title,
@@ -175,10 +204,17 @@ body {
 }
 /* светло-синие блоки */
 .advantages-description-light {
+  width: 400px;
+  height: 384px;
   background: rgba(131, 179, 211, 0.12);
 }
 .advantages-description-middle {
+  width: 400px;
+  height: 384px;
   background: rgba(131, 179, 211, 0.2);
+}
+.offer-hotel {
+  height: 417px;
 }
 .offer-text {
   font-size: 30px;
@@ -186,11 +222,18 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 90px;
+  margin-bottom: 29px;
 }
 .offer-description {
+  width: 720px;
+  height: 52px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin: 0 auto;
+  margin-bottom: 56px;
+
 }
 /* subscription newsletter */
 .subscribe {
@@ -214,11 +257,12 @@ body {
 }
 .page-footer-container {
   display: flex;
-  margin: 0 auto;
+  margin: auto;
+  height: 120px;
 }
 .footer-social {
   width: 107px;
-  margin-left: 72px;
+  margin: 49px 0 53px 72px;
 }
 .footer-social-list {
   display: flex;
@@ -226,14 +270,17 @@ body {
 /* Phone */
 .footer-contacts-phone {
   width: 720px;
-  margin-right: 53px;
-  margin-left: 61px;
+  height: 50px;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
   text-align: center;
   text-decoration: none;
   color: #000000;
+  margin: 40px 240px 30px;
+}
+.logo-academy {
+  margin: 42px 72px 44px 0;
 }
 /* Breadcrumbs */
 .breadcrumbs {
@@ -260,13 +307,22 @@ body {
   background-repeat: no-repeat;
   height: 408px;
   color: #ffffff;
+  margin-bottom: 44px;
 }
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
   margin: 0;
-  margin-left: 71px;
+  padding-left: 71px;
+  padding-top: 35px;
+}
+.catalog-filter-list {
+  padding-left: 0;
+  margin: 0;
+}
+.control-input {
+  margin-bottom: 13px;
 }
 .catalog-filter {
   display: flex;
@@ -289,6 +345,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+  margin-bottom: 30px;
 }
 .button-apply {
   width: 160px;
@@ -317,6 +374,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 192px;
+  margin-top: 0;
 }
 .select-control {
   width: 287px;
@@ -328,12 +386,28 @@ body {
   height: 48px;
 }
 .button-cards {
-border: 2px solid #000000;
-box-sizing: border-box;
-border-radius: 4px;
-margin-right: 8px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 8px;
 }
 /* Каталог гостиниц */
+.catalog-column {
+}
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1056px;
+  height: 1040px;
+  margin-left: 72px;
+  margin-right: 72px;
+  padding: 0;
+}
+.hotel-card {
+  width: 340px;
+  height: 438px;
+  padding: 20px;
+} 
 .hotel-card-link {
   text-decoration: none;
 }
@@ -402,6 +476,12 @@ margin-right: 8px;
   text-transform: uppercase;
   
 }
+.pagination {
+  display: flex;
+  flex-direction: row;
+  margin-left: 72px;
+  padding: 0;
+}
 .pagination-link {
   color: #ffffff;
   background-color: #83B3D3;
@@ -411,8 +491,11 @@ margin-right: 8px;
   font-weight: 700;
 }
 .pagination-current {
+  width: 55px;
+  height: 55px;
   color: #242424;
   background-color: #F2F2F2;
+  margin-right: 8px;
 }
 .objects-page {
   font-size: 18px;
@@ -420,14 +503,25 @@ margin-right: 8px;
   font-weight: 400;
 }
 .select-pages {
+  display: flex;
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
 }
+.pagination-item {
+  width: 55px;
+  height: 55px;
+  background: #83B3D3;
+  border-radius: 4px;
+  margin-right: 8px;
+}
 /* Subscribe to newsletter */
 .subscribe-catalog {
+  width: 800px;
+  height: 241px;
   text-align: center;
   color: #000000;
+  margin: 0 auto;
 }
 .subscribe-title-catalog {
   color: #000000;
@@ -440,6 +534,7 @@ margin-right: 8px;
   color: #000000;
   font-size: 22px;
   line-height: 26px;
+  margin-bottom: 46px;
 }
 .subscribe-button-catalog {
   font-family: inherit;
