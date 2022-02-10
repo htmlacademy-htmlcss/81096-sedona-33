@@ -24,7 +24,7 @@
             <a class="navigation-link" href="catalog-page.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-user">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -36,18 +36,20 @@
               <span class="number-likes">12</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link-button" href="#">Хочу сюда</a>
+          <li class="navigation-item-button">
+            <a class="navigation-link-button" href="#">
+            <span class="text-button">Хочу сюда</span>
+            </a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-container main-index">
-      <div class="page-conteiner">
+      <div class="page-container">
         <!--Главный заголовок -->
-        <h1 class="visually-hidden" hidden>Город Седона </h1>
+        <h1 class="visually-hidden">Город Седона </h1>
         <section class="description">
-          <h2 class="visually-hidden" hidden>Достопримечательность города</h2>
+          <h2 class="visually-hidden">Достопримечательность города</h2>
           <img class="canyon-image" src="images/welcome.svg" width="458" height="352" alt="Изображение Каньона">
           <!-- Преимущества -->
           <ul class="tagline">
@@ -58,7 +60,7 @@
             </li>
           </ul>
         </section>
-          <h2 class="visually-hidden" hidden>Преимущества</h2>
+          <h2 class="visually-hidden">Преимущества</h2>
         <div class="advantages-columns">
           <ul class="advantages-block advantages-block-1">
             <li class="advantages-description-blue">
@@ -123,14 +125,16 @@
           <h3 class="offer-text">Заинтересовались?</h3>
           <p class="offer-description">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button-search" href="catalog-page.html">Поиск гостиницы в Седоне</a>
+          <a class="button-search" href="catalog-page.html">
+            <span class="text-button-search">Поиск гостиницы в Седоне</span>
+          </a>
         </section>
         <!-- Подпишитесь на рассылку -->
         <section class="subscribe">
           <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
           <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="offer-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="offer-email">email</label>
+            <label for="offer-email" hidden>email</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="offer-email" id="offer-email"  required>
             <button class="subscribe-button" type="submit"> 
               <span class="subscribe-text">Подписаться</span>
