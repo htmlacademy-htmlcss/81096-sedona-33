@@ -92,14 +92,14 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="type-of-housing" checked>
+                    <input class="visually-hidden control-input" type="radio" name="apartments" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="motel">
+                    <input class="visually-hidden control-input" type="radio" name="apartments">
                     <span class="control-mark"></span>
                     <span class="control-label">Мотель</span>
                   </label>
@@ -118,10 +118,12 @@
               <div class="range">
                 <div class="range-wrapper-inputs">
                   <label class="catalog-filter-label-1">
-                    <input class="range-input" type="number" value="0" name="min-price">от
+                    <input class="range-input" type="number" value="0" name="min-price">
+                    <span class="range-from">от</span>
                   </label>
                   <label class="catalog-filter-label">
-                    <input class="range-input" type="number" value="9000" name="max-price">до
+                    <input class="range-input" type="number" value="9000" name="max-price">
+                    <span class="range-from">до</span>
                   </label>
                 </div>
                 <div class="range-scale">
@@ -175,8 +177,8 @@
               <li class="hotel-card">
                 <a class="hotel-card-link" href="hotel.html">
                   <img class="hotel-card-image" src="images/hotel-1.jpg" width="300" height="206" alt="Amara Resort & Spa">
-                  <h3 class="hotel-card-titlle">Amara Resort & Spa</h3>
                 </a>
+                <h3 class="hotel-card-titlle">Amara Resort & Spa</h3>
                 <span class="housing-type">Гостиница</span>
                 <span class="housing-price">От 4000 ₽</span>
                 <a class="hotel-card-button" href="#">Подробнее</a>
@@ -189,8 +191,8 @@
               <li class="hotel-card">
                 <a class="hotel-card-link" href="hotel.html">
                   <img class="hotel-card-image" src="images/hotel-2.jpg" width="300" height="206"  alt="Desert Quail Inn">
-                  <h3 class="hotel-card-titlle">Desert Quail Inn</h3>
                 </a>
+                <h3 class="hotel-card-titlle">Desert Quail Inn</h3>
                 <span class="housing-type">Гостиница</span>
                 <span class="housing-price">От 3000 ₽</span>
                 <a class="hotel-card-button" href="#">Подробнее</a>
@@ -203,8 +205,8 @@
               <li class="hotel-card">
                 <a class="hotel-card-link" href="hotel.html">
                   <img class="hotel-card-image" src="images/hotel-3.jpg" width="300" height="206" alt="Villas at Poco Diablo">
-                  <h3 class="hotel-card-titlle">Villas at Poco Diablo</h3>
                 </a>
+                <h3 class="hotel-card-titlle">Villas at Poco Diablo</h3>
                 <span class="housing-type">Гостиница</span>
                 <span class="housing-price">От 2000 ₽</span>
                 <a class="hotel-card-button" href="#">Подробнее</a>
@@ -217,8 +219,8 @@
               <li class="hotel-card">
                 <a class="hotel-card-link" href="hotel.html">
                   <img class="hotel-card-image" src="images/hotel-4.jpg" width="300" height="206" alt="GreenTree Inn">
-                  <h3 class="hotel-card-titlle">GreenTree Inn</h3>
                 </a>
+                <h3 class="hotel-card-titlle">GreenTree Inn</h3>
                 <span class="housing-type">Гостиница</span>
                 <span class="housing-price">От 3000 ₽</span>
                 <a class="hotel-card-button" href="#">Подробнее</a>
@@ -230,7 +232,9 @@
               </li>
             </ul>
             </section>
+            <div class="pagination-button-wrapper">
             <button class="pagination-button pagination-show-more" type="button">Загрузить ещё</button>
+          </div>
             <div class="pagination-container">
               <ul class="pagination">
                 <li class="pagnation-item">
