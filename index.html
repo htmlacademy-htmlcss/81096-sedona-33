@@ -15,7 +15,7 @@
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-border" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="about.html">О Седоне</a>
@@ -157,6 +157,39 @@
           </a>
         </section>         
    </footer>
+   <div class="modal-container modal-container-close">
+    <div class="modal modal-auth">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="date" for="auth-check-in">Дата заезда:</label>
+            <input class="auth-form-field field" type="text" id="auth-check-in" name="auth-check-in" placeholder="27 апреля 2020">
+            <button class="calendar-form-button" type="text"></button>
+            <span class="note">Мы не можем отправить вас в прошлое.</span>
+            <label class="date" for="auth-check-out">Дата выезда:</label>
+            <input class="auth-form-field field" type="text" id="auth-check-out" name="auth-password" placeholder="1 сентября 2021">
+              <button class="calendar-form-button calendar-out" type="text"></button>
+              <span class="note note-departure">На эти даты есть свободные номера. Пока есть.</span>
+              <label class="date" for="auth-adult">Взрослые:</label>
+              <button class="button-plus" type="text"></button>   
+            <input class="auth-form-field auth-form-adult field" type="text" id="auth-adult" name="auth-password" placeholder="2">
+              <label class="date children-number" for="auth-children">Дети:</label>
+              <span class="children-popover">i</span>
+            <div class="popover-description popover-description-open">
+              <div class="popover-content">
+                Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+              </div>
+            </div>
+            <input class="auth-form-field auth-form-children field" type="text" id="auth-children" name="auth-password" placeholder="1">
+          <button class="pagination-button auth-form-button" type="submit">Найти</button>
+        </form>
+      </section>
+      </section>
+    </div>
+  </div>
   </body>
 </html>
  
